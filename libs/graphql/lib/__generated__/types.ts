@@ -71,28 +71,28 @@ export type Starship = {
 
 export type StarshipFragment = { __typename?: 'Starship', id: string, name: string, score: number, crew: number };
 
-export type UpdateScoreMutationVariables = types.Exact<{
-  id: types.Scalars['Int']['input'];
+export type UpdateScoreMutationVariables = Exact<{
+  id: Scalars['Int']['input'];
 }>;
 
 
 export type UpdateScoreMutation = { __typename?: 'Mutation', updateScore: { __typename?: 'Starship', id: string, name: string, score: number, crew: number } };
 
-export type GetPaginatedStarshipsQueryVariables = types.Exact<{
-  page?: types.InputMaybe<types.Scalars['Int']['input']>;
-  size?: types.InputMaybe<types.Scalars['Int']['input']>;
+export type GetPaginatedStarshipsQueryVariables = Exact<{
+  page?: InputMaybe<Scalars['Int']['input']>;
+  size?: InputMaybe<Scalars['Int']['input']>;
 }>;
 
 
 export type GetPaginatedStarshipsQuery = { __typename?: 'Query', getPaginatedStarships: Array<{ __typename?: 'Starship', id: string, name: string, score: number, crew: number }> };
 
-export type GetRandomStarshipQueryVariables = types.Exact<{ [key: string]: never; }>;
+export type GetRandomStarshipQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type GetRandomStarshipQuery = { __typename?: 'Query', getRandomStarship: { __typename?: 'Starship', id: string, name: string, score: number, crew: number } };
 
-export type GetStarshipQueryVariables = types.Exact<{
-  id: types.Scalars['Int']['input'];
+export type GetStarshipQueryVariables = Exact<{
+  id: Scalars['Int']['input'];
 }>;
 
 

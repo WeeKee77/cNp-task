@@ -9,7 +9,6 @@ const config: CodegenConfig = {
       config: {
         useIndexSignature: true,
         content: 'import * as types from "@nx-apollo/models-graphql"',
-        namespacedImportName: 'types',
       },
     },
   },

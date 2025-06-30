@@ -45,7 +45,10 @@ nx run-many --all --target=test --parallel
 ## Build and run production
 Backend
 ```sh
-nx run api:serve:development
+nx run api:build
+```
+```sh
+nx run api:serve:production
 ```
 
 Frontend
