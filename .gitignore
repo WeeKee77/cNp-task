@@ -9,7 +9,7 @@ out-tsc
 node_modules
 
 
-#**/__generated__/
+**/__generated__/
 
 # IDEs and editors
 /.idea
