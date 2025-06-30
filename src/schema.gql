@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  createManyStarships(newStarshipsData: [NewStarshipInput!]!): [Starship!]!
+  createStarship(newStarshipData: NewStarshipInput!): Starship!
+  updateScore(id: Int!): Starship!
+}
+
+input NewStarshipInput {
+  crew: Float!
+  name: String!
+}
+
+type Query {
+  getAllStarships: [Starship!]!
+  getPaginatedStarships(page: Int = 0, size: Int = 10): [Starship!]!
+  getRandomStarship: Starship!
+  starship(id: Int!): Starship!
+}
+
+type Starship {
+  crew: Int!
+  id: ID!
+  name: String!
+  score: Int!
+}

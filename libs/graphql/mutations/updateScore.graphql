@@ -1,0 +1,7 @@
+mutation updateScore(
+  $id: Int!
+) {
+  updateScore(id: $id) {
+    ...starship
+  }
+}

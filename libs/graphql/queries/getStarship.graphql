@@ -1,0 +1,9 @@
+#import "../fragments/starship.graphql"
+
+query getStarship(
+  $id: Int!
+) {
+  starship(id: $id) {
+    ...starship
+  }
+}

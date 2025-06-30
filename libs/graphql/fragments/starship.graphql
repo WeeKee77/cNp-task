@@ -1,0 +1,6 @@
+fragment starship on Starship {
+  id
+  name
+  score
+  crew
+}

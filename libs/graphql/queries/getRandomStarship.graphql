@@ -1,0 +1,7 @@
+#import "../fragments/starship.graphql"
+
+query getRandomStarship {
+  getRandomStarship {
+    ...starship
+  }
+}

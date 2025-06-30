@@ -1,0 +1,10 @@
+#import "../fragments/starship.graphql"
+
+query getPaginatedStarships(
+  $page: Int
+  $size: Int
+) {
+  getPaginatedStarships(page: $page, size: $size) {
+    ...starship
+  }
+}
